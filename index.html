@@ -337,21 +337,15 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12 mx-auto mt-4">
-                    <form action="" class="contact-form">
+                    <div>
                         <div class="contact-inputs">
-                            <input type="text" placeholder="Name" class="contact-input">
-                            <input type="mail" placeholder="Email" class="contact-input">
+                            <input type="mail" id="fromName" placeholder="Email" class="contact-input" required>
+                            <input type="text" id="toName" placeholder="Name" class="contact-input" required>
                         </div>
+                        <textarea name="" id="msg" cols="0" rows="7" placeholder="Message" class="contact-input" required></textarea>
 
-                        <div class="contact-inputs">
-                            <input type="text" placeholder="Project" class="contact-input">
-                            <input type="number" placeholder="Number" class="contact-input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact-input"></textarea>
-
-                        <button type="submit" class="btn btn-send-message">Send Message</button>
-                    </form>
+                        <button type="submit" class="btn btn-send-message" onclick="sendMail()">Send Message</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -374,6 +368,12 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
     <script src="assets/script/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script src="assets/script/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_vtiFAY3VqgqeZoaoumqFY");
+        })();
+    </script>
     <script src="assets/script/script.js"></script>
 </body>
 

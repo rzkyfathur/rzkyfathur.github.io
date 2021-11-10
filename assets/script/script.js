@@ -89,8 +89,18 @@ themeButton.addEventListener('click', () => {
 
 
 
-/*===== VIEW IMAGE =====*/
+/*===== send email =====*/
+function sendMail(params) {
+    let tempParams = {
+        from_name: document.getElementById('fromName').value,
+        to_name: document.getElementById('toName').value,
+        message: document.getElementById('msg').value
+    }
 
+    emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
+        alert('E-mail sent successfully!', res.status)
+    })
+}
 
 
 /*===== GSAP =====*/
