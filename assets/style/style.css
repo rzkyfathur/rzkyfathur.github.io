@@ -767,6 +767,11 @@ body.dark-theme {
     border-radius: .5rem;
 }
 
+.btn-send-message:hover {
+    color: white;
+    background-color: #b8a6ff;
+}
+
 ::placeholder {
     color: var(--first-color-light);
 }
