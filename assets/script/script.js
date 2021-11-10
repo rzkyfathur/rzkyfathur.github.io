@@ -91,15 +91,24 @@ themeButton.addEventListener('click', () => {
 
 /*===== send email =====*/
 function sendMail(params) {
-    let tempParams = {
-        from_name: document.getElementById('fromName').value,
-        to_name: document.getElementById('toName').value,
-        message: document.getElementById('msg').value
+    let name = document.getElementById('fromName').value;
+    let toName = document.getElementById('toName').value;
+
+    if (name == "" && toName == "") {
+        alert("Please complete the message form!");
+        return false;
+    } else {
+        let tempParams = {
+            from_name: document.getElementById('fromName').value,
+            to_name: document.getElementById('toName').value,
+            message: document.getElementById('msg').value
+        }
+
+        emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
+            alert('E-mail sent successfully!', res.status)
+        })
     }
 
-    emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
-        alert('E-mail sent successfully!', res.status)
-    })
 }
 
 
