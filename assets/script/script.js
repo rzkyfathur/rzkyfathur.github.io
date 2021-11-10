@@ -94,10 +94,7 @@ function sendMail(params) {
     let name = document.getElementById('fromName').value;
     let toName = document.getElementById('toName').value;
 
-    if (name == "") {
-        alert("Please complete the message form!");
-        return false;
-    } else if (toName == "") {
+    if (name == "" || toName == "") {
         alert("Please complete the message form!");
         return false;
     } else {
