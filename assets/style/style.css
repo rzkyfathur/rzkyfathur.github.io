@@ -338,6 +338,10 @@ body.dark-theme {
     padding: 1.4rem 1.4rem 0 1.4rem;
 }
 
+.section-portofolio .row .cards .portofolio-image .img {
+    border-radius: .50rem;
+}
+
 .section-portofolio .container .cards {
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
