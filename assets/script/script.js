@@ -113,8 +113,9 @@ function sendMail(params) {
         emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
             alert('E-mail sent successfully!', res.status)
         })
-
-        resetValue()
+        setTimeout(() => {
+            resetValue()
+        }, 2000);
     }
 
 }
