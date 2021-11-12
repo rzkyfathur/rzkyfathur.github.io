@@ -100,7 +100,8 @@ function resetValue() {
 function sendMail(params) {
     let name = document.getElementById('fromName').value;
     let toName = document.getElementById('toName').value;
-    if (name == "" || toName == "") {
+    let msg = document.getElementById('msg').value;
+    if (name == "" || toName == "" || msg == "") {
         alert("Please complete the message form!");
         return false;
     } else {
