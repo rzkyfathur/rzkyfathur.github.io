@@ -87,7 +87,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
+/*===== Alert get cv =====*/
+function getcv() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Sorry Cv is Not Available at This Time !',
+        footer: '<a href="">Why do I have this issue?</a>'
+    })
+}
 
 /*===== send email =====*/
 
@@ -102,7 +110,12 @@ function sendMail(params) {
     let toName = document.getElementById('toName').value;
     let msg = document.getElementById('msg').value;
     if (name == "" || toName == "" || msg == "") {
-        alert("Please complete the message form!");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please Complete The Message Form!',
+            footer: '<a href="">Why do I have this issue?</a>'
+        })
         return false;
     } else {
         let tempParams = {
@@ -112,7 +125,13 @@ function sendMail(params) {
         }
 
         emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
-            alert('E-mail sent successfully!', res.status)
+            Swal.fire(
+                    'E-mail sent successfully!',
+                    'You clicked the button!',
+                    'success',
+                    res.status
+                )
+                // alert('E-mail sent successfully!', res.status)
         })
         setTimeout(() => {
             resetValue()
