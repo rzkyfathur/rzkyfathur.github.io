@@ -438,19 +438,18 @@ body.dark-theme {
     color: var(--first-color);
 }
 
-.section-contact .icon-contact {
+
+/* .section-contact #icon-contact {
     color: var(--secondary-color);
-}
+    font-size: 2rem;
+    stroke: red;
+} */
 
 .section-contact .cards-contact {
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: .85rem;
     padding: 2rem 0 2rem 0;
-}
-
-.section-contact .icon-contact {
-    font-size: 2rem;
 }
 
 .section-contact .cards-contact>p {
@@ -465,7 +464,7 @@ body.dark-theme {
 /* ==================================FOOTER====================================== */
 
 .main-footer {
-    padding: 2rem 0;
+    padding: 2rem 0.5rem 0;
     border-top: 1px solid var(--secondary-color);
 }
 
