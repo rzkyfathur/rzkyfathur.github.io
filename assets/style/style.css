@@ -15,9 +15,9 @@
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     /*===== Font and typography =====*/
     --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
+    --biggest-font-size: 3.2rem;
+    --h1-font-size: 1.9rem;
+    --h2-font-size: 1.5rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -124,7 +124,7 @@ h2 {
 }
 
 .section {
-    padding: 4rem 0 2rem;
+    padding: 10rem 0 2rem;
 }
 
 .l-header {
@@ -135,7 +135,9 @@ h2 {
     z-index: var(--z-fixed);
     background-color: var(--bg-color);
 }
-
+ .section-title{
+    font-size: var(--h2-font-size);
+}
 
 /*================================== NAV =========================*/
 
@@ -329,6 +331,7 @@ body.dark-theme {
 
 .section-hero .row .hero-title {
     color: var(--first-color);
+    font-size: var(--h1-font-size);
 }
 
 
@@ -341,12 +344,27 @@ body.dark-theme {
     color: var(--first-color);
 }
 
+.portfolio__item{
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.active-portfolio{
+    font-weight: var(--font-bold);
+    color: var(--secondary-color);
+}
+
+
 .section-portofolio .portofolio-title .portofolio-nav {
     margin-top: 1.5rem;
 }
 
 .section-portofolio .row .cards .portofolio-image {
-    padding: 1.4rem 1.4rem 0 1.4rem;
+    padding: 1rem 1.4rem 0 1.4rem;
+}
+
+.cards .portofolio-user{
+      padding: 1rem 1.4rem 0 1.4rem;
 }
 
 .section-portofolio .row .cards .portofolio-image .img {
@@ -382,10 +400,10 @@ body.dark-theme {
     color: var(--first-color);
 }
 
-.container .row .portofolio-title,
-.title-section-portofolio {
+.title-user{
     color: var(--first-color);
 }
+
 
 .portfolio-item:hover .portofolio-image {
     transform: scale(1.02);
@@ -394,6 +412,25 @@ body.dark-theme {
 .portfolio-item .portofolio-image {
     cursor: pointer;
 }
+
+
+
+
+/*=====================================Experience=====================================*/
+.experience-subtitle{
+    font-weight: var(--font-normal);
+    font-size: 14px;
+}
+
+.experience-title, .experience-subtitle, .icon-experience, .experiencee{
+    color: var(--first-color);
+}
+
+.experience-card{
+    border-bottom: .8px solid var(--first-color);
+    padding-bottom: 10px;
+}
+
 
 
 /*=====================================skills=====================================*/
@@ -444,7 +481,7 @@ body.dark-theme {
 /*=====================================CONTACT=====================================*/
 
 .section-contact .subtitle-contact,
-.title-section-contact,
+.section-title,
 .title-contact {
     color: var(--first-color);
 }
@@ -479,6 +516,7 @@ body.dark-theme {
 .main-footer {
     padding: 2rem 0;
     border-top: 1px solid var(--secondary-color);
+    margin-top: 10rem;
 }
 
 .main-footer .link-footer {
@@ -725,9 +763,6 @@ body.dark-theme {
     transform: scale(1.1);
 }
 
-.section-certificate .section-certificate-title {
-    color: var(--first-color);
-}
 
 
 /* ==================================Contact form====================================== */
@@ -805,6 +840,15 @@ body.dark-theme {
     .nav__toggle {
         display: none;
     }
+
+    .section-hero .row .hero-title{
+        font-size: 3.9rem;
+        line-height: 5rem;
+    }
+
+     .section-title{
+    font-size: var(--h1-font-size);
+    }
 }
 
 
@@ -825,7 +869,7 @@ body.dark-theme {
 
 @media screen and (max-width: 768px) {
     .hero-title {
-        font-size: 1.5rem;
+       
         line-height: 2.1rem
     }
     .btn-get-started {

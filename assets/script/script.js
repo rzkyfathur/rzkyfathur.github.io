@@ -41,6 +41,30 @@ function scrollTop() {
 window.addEventListener('scroll', scrollTop)
 
 
+/*===== MIXITUP FILTER PORTFOLIO =====*/
+var mixer = mixitup(".portfolio-container", {
+    selectors: {
+        target: '.portfolio-item'
+    },
+    animation: {
+        duration: 400
+    }
+});
+
+
+/* Link active portfolio */
+const linkPortfolio = document.querySelectorAll('.portfolio__item')
+
+function activePortfolio() {
+    if (linkPortfolio) {
+        linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
+        this.classList.add('active-portfolio')
+    }
+}
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
+
+
+
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -124,14 +148,14 @@ function sendMail(params) {
             message: document.getElementById('msg').value
         }
 
-        emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function(res) {
+        emailjs.send('service_t8ignq9', 'template_wzr1jum', tempParams).then(function (res) {
             Swal.fire(
-                    'E-mail sent successfully!',
-                    'You clicked the button!',
-                    'success',
-                    res.status
-                )
-                // alert('E-mail sent successfully!', res.status)
+                'E-mail sent successfully!',
+                'You clicked the button!',
+                'success',
+                res.status
+            )
+            // alert('E-mail sent successfully!', res.status)
         })
         setTimeout(() => {
             resetValue()
@@ -172,13 +196,14 @@ gsap.from('.hero-title, .button', {
     x: -60
 })
 
-gsap.registerPlugin(TextPlugin);
-gsap.to('.hero-title', {
-    duration: 2.5,
-    delay: 2,
-    text: `Yoo I'm Fathur Rizky
-    I 'm Web Developer`
-})
+// gsap.registerPlugin(TextPlugin);
+// gsap.to('.hero-title', {
+//     duration: 2.5,
+//     delay: 2,
+//     text: `Yoo I'm Fathur Rizky
+//     I 'm Web Developer`
+
+// })
 
 
 const sr = ScrollReveal({
@@ -189,6 +214,9 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.contact-item, .portfolio-item, .skills-item, .certificate-item`, {
+sr.reveal(`.contact-item, .portfolio-item, .skills-item, .certificate-item, .experience-item`, {
     interval: 100
 })
+
+
+// Disable inspect element
