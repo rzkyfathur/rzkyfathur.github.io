@@ -426,6 +426,9 @@ body.dark-theme {
     color: var(--first-color);
 }
 
+.experience-title{
+    font-size: 1.2rem;
+}
 .experience-card{
     border-bottom: .8px solid var(--first-color);
     padding-bottom: 10px;
@@ -528,6 +531,24 @@ body.dark-theme {
 .design-by {
     color: var(--first-color);
 }
+
+.f{
+    color: var(--first-color);
+}
+
+.r{
+    color: var(--secondary-color);
+}
+
+.social_icon{
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.footer-text{
+    font-size: 14px;
+}
+
 
 
 /* ==================================View Certification====================================== */
@@ -849,6 +870,10 @@ body.dark-theme {
      .section-title{
     font-size: var(--h1-font-size);
     }
+
+    .experience-title{
+    font-size: var(--h2-font-size);
+}
 }
 
 
