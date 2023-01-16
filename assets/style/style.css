@@ -517,8 +517,8 @@ body.dark-theme {
 /* ==================================FOOTER====================================== */
 
 .main-footer {
-    padding: 2rem 0;
-    border-top: 1px solid var(--secondary-color);
+    padding: 1.5rem 0 1rem 0;
+    border-top: 1px solid var(--first-color);
     margin-top: 10rem;
 }
 
@@ -804,7 +804,7 @@ body.dark-theme {
 .contact-input {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--first-color);
     color: var(--first-color);
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
