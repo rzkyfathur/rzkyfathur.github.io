@@ -11,7 +11,7 @@
     --secondary-color: #A790FF;
     --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
-    --bg-color: #ffffff;
+    --bg-color: #fefefe;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     /*===== Font and typography =====*/
     --body-font: 'Poppins', sans-serif;
@@ -413,6 +413,13 @@ body.dark-theme {
     cursor: pointer;
 }
 
+.badge{
+    background-color: #cfe00c;
+    border-radius: 3px;
+    color: black;
+    font-size: 12px;
+    font-weight: var(--font-normal);
+}
 
 
 
