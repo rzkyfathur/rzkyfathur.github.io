@@ -277,12 +277,13 @@ h2 {
 /*================================================== dark theme ===================================*/
 
 body.dark-theme {
+    /* #23283E */
     --first-color: orange;
     --secondary-color: #A790FF;
     --first-color-light: #fff;
     --first-color-lighten: #FBF9F9;
     --bg-color: #041800;
-    /* #23283E */
+    
 }
 
 
