@@ -237,3 +237,17 @@ sr.reveal(`.contact-item, .portfolio-item, .skills-item, .certificate-item, .exp
 
 
 // Disable inspect element
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'i'.charCodeAt(0)) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'c'.charCodeAt(0)) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'j'.charCodeAt(0)) {
+        disabledEvent(e);
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        disabledEvent(e);
+    }
+})
