@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false" onkeydown="return false">
     <!--===== SCROLL TOP =====-->
     <a href="#" class="btn scrolltop" id="scroll-top">
         <i class='bx bx-chevron-up scrolltop__icon'></i>
@@ -653,7 +653,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                 <div class="col-lg-6 col-sm-12 mx-auto mt-4">
                     <div>
                         <div class="contact-inputs">
-                            <input type="mail" id="fromName" placeholder="Email" class="contact-input" required>
+                            <input type="email" id="fromName" placeholder="Email" class="contact-input" required>
                             <input type="text" id="toName" placeholder="Name" class="contact-input" required>
                         </div>
                         <textarea name="" id="msg" cols="0" rows="7" placeholder="Message" class="contact-input"
@@ -698,6 +698,21 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
         (function () {
             emailjs.init("user_vtiFAY3VqgqeZoaoumqFY");
         })();
+
+        document.addEventListener("keydown", function (e) {
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 'i'.charCodeAt(0)) {
+                disabledEvent(e);
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 'c'.charCodeAt(0)) {
+                disabledEvent(e);
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 'j'.charCodeAt(0)) {
+                disabledEvent(e);
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                disabledEvent(e);
+            }
+        })
     </script>
     <script src="assets/script/script.js"></script>
 </body>

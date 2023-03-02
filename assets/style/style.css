@@ -11,6 +11,7 @@
     --secondary-color: #A790FF;
     --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
+    --border-color: #E3E8EF;
     --bg-color: #fefefe;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     /*===== Font and typography =====*/
@@ -283,6 +284,7 @@ body.dark-theme {
     --first-color-light: #fff;
     --first-color-lighten: #FBF9F9;
     --bg-color: #041800;
+    --border-color: orange;
     
 }
 
@@ -377,6 +379,7 @@ body.dark-theme {
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: .85rem;
+      border: .8px solid var(--border-color);
 }
 
 .section-portofolio .container .cards .tool-title {
@@ -457,6 +460,7 @@ body.dark-theme {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     padding: 4rem 1rem 2rem 1rem;
     border-radius: .85rem;
+      border: .8px solid var(--border-color);
 }
 
 .section-skills .container .cards-skills:hover {
@@ -511,6 +515,7 @@ body.dark-theme {
     border-radius: .85rem;
     padding: 2rem 0 2rem 0;
     color: var(--first-color);
+    border: .8px solid var(--border-color);
 }
 
 .section-contact .cards-contact a {
