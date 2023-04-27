@@ -20,7 +20,7 @@
 
 </head>
 
-<body oncontextmenu="return false" onkeydown="return false">
+<body oncontextmenu="return false">
     <!--===== SCROLL TOP =====-->
     <a href="#" class="btn scrolltop" id="scroll-top">
         <i class='bx bx-chevron-up scrolltop__icon'></i>
@@ -699,20 +699,17 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
             emailjs.init("user_vtiFAY3VqgqeZoaoumqFY");
         })();
 
-        document.addEventListener("keydown", function (e) {
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 'i'.charCodeAt(0)) {
-                disabledEvent(e);
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+                return false;
+            } else if (event.ctrlKey && event.keyCode == 85) {
+                return false;
             }
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 'c'.charCodeAt(0)) {
-                disabledEvent(e);
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 'j'.charCodeAt(0)) {
-                disabledEvent(e);
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                disabledEvent(e);
-            }
-        })
+        });
     </script>
     <script src="assets/script/script.js"></script>
 </body>

@@ -9,9 +9,10 @@
     /*===== Colors =====*/
     --first-color: #121212;
     --secondary-color: #A790FF;
+    --tertiary-color: #A790FF;
     --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
-    --border-color: #E3E8EF;
+    --card-color: #fefefe;
     --bg-color: #fefefe;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     /*===== Font and typography =====*/
@@ -188,7 +189,7 @@ h2 {
 }
 
 .logo {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: var(--h2-font-size);
 }
 
@@ -253,7 +254,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: .5rem;
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     border-radius: .5rem;
     z-index: var(--z-tootip);
     transition: .4s;
@@ -279,12 +280,13 @@ h2 {
 
 body.dark-theme {
     /* #23283E */
-    --first-color: orange;
-    --secondary-color: #A790FF;
+    --first-color: #ffffff;
+    --secondary-color: #0c0c0c;
     --first-color-light: #fff;
     --first-color-lighten: #FBF9F9;
-    --bg-color: #041800;
-    --border-color: orange;
+    --bg-color: #121212;
+    --card-color: #202020;
+    
     
 }
 
@@ -305,7 +307,7 @@ body.dark-theme {
 }
 
 .btn-get-cv {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     color: var(--first-color-lighten);
     font-size: 1.2rem;
     font-weight: var(--font-medium);
@@ -376,10 +378,10 @@ body.dark-theme {
 }
 
 .section-portofolio .container .cards {
-    background-color: var(--bg-color);
+    background-color: var(--card-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: .85rem;
-      border: .8px solid var(--border-color);
+    
 }
 
 .section-portofolio .container .cards .tool-title {
@@ -392,7 +394,7 @@ body.dark-theme {
 }
 
 .section-portofolio .container .cards .icon-portfolio {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .section-portofolio .container .cards .tool-icon>a {
@@ -455,16 +457,16 @@ body.dark-theme {
 }
 
 .section-skills .container .cards-skills {
-    background-color: var(--bg-color);
+    background-color: var(--card-color);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     padding: 4rem 1rem 2rem 1rem;
     border-radius: .85rem;
-      border: .8px solid var(--border-color);
+    
 }
 
 .section-skills .container .cards-skills:hover {
-    background-color: var(--bg-color);
+    background-color: var(--card-color);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     padding: 4rem 0 2rem 0;
@@ -510,12 +512,11 @@ body.dark-theme {
 } */
 
 .section-contact .cards-contact {
-    background-color: var(--bg-color);
+    background-color: var(--card-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: .85rem;
     padding: 2rem 0 2rem 0;
     color: var(--first-color);
-    border: .8px solid var(--border-color);
 }
 
 .section-contact .cards-contact a {
@@ -538,7 +539,7 @@ body.dark-theme {
 
 .main-footer .link-footer {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .main-footer .footer-data,
@@ -556,7 +557,7 @@ body.dark-theme {
 
 .social_icon{
     font-size: 22px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .footer-text{
@@ -840,7 +841,7 @@ body.dark-theme {
 }
 
 .btn-send-message {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     color: var(--first-color-lighten);
     font-size: 1rem;
     font-weight: var(--font-medium);
@@ -895,8 +896,8 @@ body.dark-theme {
 
 @media screen and (min-width: 1024px) {
     .bd-container {
-        margin-left: 8rem;
-        margin-right: 8rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .qualification__container {
         column-gap: 6rem;
