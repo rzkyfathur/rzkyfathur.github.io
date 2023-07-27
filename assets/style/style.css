@@ -1,6 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("href=https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap");
 
 /*===== VARIABLES CSS =====*/
 
@@ -9,14 +9,14 @@
     /*===== Colors =====*/
     --first-color: #121212;
     --secondary-color: #A790FF;
-    --tertiary-color: #A790FF;
+    --tertiary-color: #7F00FF;
     --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
     --card-color: #fefefe;
-    --bg-color: #fefefe;
+    --bg-color: #FBFBFB;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     /*===== Font and typography =====*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Satoshi', sans-serif;;
     --biggest-font-size: 3.2rem;
     --h1-font-size: 1.9rem;
     --h2-font-size: 1.5rem;
@@ -27,7 +27,7 @@
     /*===== Font weight =====*/
     --font-medium: 500;
     --font-semi-bold: 600;
-    --font-bold: 700;
+    --font-bold: 900;
     --font-normal: 400;
     /*===== Margenes =====*/
     --mb-1: .5rem;
@@ -107,7 +107,7 @@ img {
 
 h2 {
     font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
 }
 
 .skill-title {
@@ -212,7 +212,7 @@ h2 {
 }
 
 .nav .change-theme {
-    color: var(--first-color);
+    color: #7F00FF;
 }
 
 
@@ -262,7 +262,7 @@ h2 {
 }
 
 .scrolltop:hover {
-    background-color: #b8a6ff;
+    background-color: #9140e2;
 }
 
 .scrolltop__icon {
@@ -300,6 +300,7 @@ body.dark-theme {
 .hero-title {
     line-height: 4rem;
     font-weight: var(--font-bold);
+    
 }
 
 .button {
@@ -314,15 +315,18 @@ body.dark-theme {
     margin-right: 20px;
     padding: .958rem 1.5rem;
     border-radius: .5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-get-cv:hover {
-    background-color: #b8a6ff;
+    background-color: #9140e2;
     color: white;
     font-size: 1.2rem;
     font-weight: var(--font-medium);
     margin-right: 20px;
     padding: .958rem 1.5rem;
+    transform: scale(1.1); /* Increase the size by 10% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
 }
 
 .home .container .icon-btn {
@@ -336,7 +340,10 @@ body.dark-theme {
 }
 
 .section-hero .row .hero-title {
-    color: var(--first-color);
+  background: linear-gradient(90deg, #E100FF 0%, #7F00FF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
     font-size: var(--h1-font-size);
 }
 
@@ -357,7 +364,7 @@ body.dark-theme {
 
 .active-portfolio{
     font-weight: var(--font-bold);
-    color: var(--secondary-color);
+    color: #7F00FF;
 }
 
 
@@ -438,6 +445,7 @@ body.dark-theme {
 
 .experience-title, .experience-subtitle, .icon-experience, .experiencee{
     color: var(--first-color);
+    font-weight: var(--font-medium);
 }
 
 .experience-title{
@@ -479,7 +487,7 @@ body.dark-theme {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #A790FF;
+    background-color: #7F00FF;
     color: var(--bg-color);
     padding: .45rem .45rem;
     border-radius: 0 .85rem 0;
@@ -848,11 +856,14 @@ body.dark-theme {
     margin-right: 20px;
     padding: .958rem 1.5rem;
     border-radius: .5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-send-message:hover {
     color: white;
-    background-color: #b8a6ff;
+    background-color: #9140e2;
+    transform: scale(1.1); /* Increase the size by 10% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
 }
 
 ::placeholder {
@@ -910,7 +921,8 @@ body.dark-theme {
 @media screen and (max-width: 768px) {
     .hero-title {
        
-        line-height: 2.1rem
+        line-height: 2.3rem;
+        font-size: 1.6rem
     }
     .btn-get-started {
         font-size: .95rem;
