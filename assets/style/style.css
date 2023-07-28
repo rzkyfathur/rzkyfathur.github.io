@@ -9,6 +9,7 @@
     /*===== Colors =====*/
     --first-color: #121212;
     --secondary-color: #A790FF;
+    --surface-color: #f9ffb5;
     --tertiary-color: #7F00FF;
     --first-color-light: #7B6F71;
     --first-color-lighten: #FBF9F9;
@@ -286,6 +287,7 @@ body.dark-theme {
     --first-color-lighten: #FBF9F9;
     --bg-color: #121212;
     --card-color: #202020;
+    --surface-color: #202020;
     
     
 }
@@ -357,6 +359,12 @@ background-clip: text;
     color: var(--first-color);
 }
 
+/* .section-info{
+    margin-top: 10rem;
+    background: linear-gradient(90deg, #E100FF 0%, #7F00FF 100%);
+    padding: 12px 0 12px;
+} */
+
 .portfolio__item{
     cursor: pointer;
     color: var(--first-color);
@@ -391,13 +399,21 @@ background-clip: text;
     
 }
 
-.section-portofolio .container .cards .tool-title {
-    color: var(--secondary-color);
-}
+
 
 .section-portofolio .container .cards .tool-title>small {
     margin-right: 1rem;
-    color: var(--first-color);
+    color: #727272;
+    border: 1px solid #a0a0a0;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    
+}
+.section-portofolio .container .cards .tool-title {
+    
+    gap: 1rem;
+    
 }
 
 .section-portofolio .container .cards .icon-portfolio {
@@ -438,12 +454,38 @@ background-clip: text;
 
 
 /*=====================================Experience=====================================*/
-.experience-subtitle{
-    font-weight: var(--font-normal);
-    font-size: 14px;
+.section-experience .experience-content{
+   
+    padding: 32px 64px;
+    background-color: var(--surface-color);
+    border-radius: .85rem;
+}
+.section-experience{
+     position: relative;
 }
 
-.experience-title, .experience-subtitle, .icon-experience, .experiencee{
+.section-experience .img-uiux{
+    position: absolute;
+    top: calc(85% - 100px);
+    right: 0;
+}
+.section-experience .experience-content .about{
+    width: 90%;
+}
+
+
+.section-experience .about{
+    line-height: 24px;
+    color: #727272;
+    font-weight: var(--font-normal);
+}
+.experience-subtitle,  .icon-experience{
+    font-weight: var(--font-normal);
+    font-size: 14px;
+    color: #727272;
+}
+
+.experience-title, .experiencee{
     color: var(--first-color);
     font-weight: var(--font-medium);
 }
@@ -888,6 +930,7 @@ background-clip: text;
         display: none;
     }
 
+  
     .section-hero .row .hero-title{
         font-size: 3.9rem;
         line-height: 5rem;
@@ -927,6 +970,16 @@ background-clip: text;
     .btn-get-started {
         font-size: .95rem;
     }
+
+    .section-experience{
+     margin-left: 12px;
+     margin-right: 12px;
+}
+
+      .section-experience .img-uiux{
+    display: none;
+    }
+
     .home .container .hero-banner {
         padding-top: 4rem;
         width: 80%;
