@@ -62,66 +62,29 @@
                             I'm Web Developer & UI/UX Designer</h1>
                         <div class="button">
                             <div class="d-flex flex-row flex-wrap">
-                                <button href="#" title="Get Cv" class="btn btn-get-cv px-5 py-3 mr-4 "
-                                    onclick="getcv()">Get
-                                    Cv</button>
+                                <a href="#contact" class="btn btn-get-cv px-5 py-3 mr-4 ">Contact Me</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 hero-banner">
-                        <img src="assets/images/Image.png" class="img-fluid banner">
+                        <img src="assets/images/Image.webp" class="img-fluid banner" alt="hero-banner">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--========================= About =======================-->
-        <!-- <section class="section section-experience" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center portofolio-title">
 
-                        <h2 class="section-title">ABOUT ME</h2>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-
-                </div>
-            </div>
-        </section> -->
-
-        <!-- <section class="section-info w-100 bg-dark">
-            <div class="container">
-                <marquee behavior="" direction="">
-                    <div class="d-flex justify-content-around">
-                        <div>
-                            <h2 class="text-white">4</h2>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div>
-                            <h2 class="text-white">Year of experience</h2>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div>
-                            <h2 class="text-white">Year of experience</h2>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </marquee>
-            </div>
-        </section> -->
 
         <!--========================= experience =======================-->
         <section class="section section-experience" id="about">
-            <img src="assets/images/Frame 37.png" alt="" class="img-uiux" width="15%">
+            <img src="assets/images/Frame 37.png" alt="" class="img-uiux">
             <div class="container experience-content">
                 <div class="row">
                     <div class="col-lg-12 text-center portofolio-title">
                         <h2 class="section-title">About Me</h2>
                     </div>
                 </div>
-                <p class="mt-4 about">Hello, my name is Muhammad Fathur Rizky. I have experience as a freelance
+                <p class="mt-5 about">Hello, my name is Muhammad Fathur Rizky. I have experience as a freelance
                     Frontend
                     developer and
                     UI/UX designer. During my freelance work, I have worked on various projects such as company
@@ -130,6 +93,12 @@
                     coding and design. I am constantly seeking opportunities to improve my skills and contribute to
                     meaningful projects that make a positive impact.</p>
 
+                <div class="button-cv mt-3">
+                    <div class="d-flex flex-row flex-wrap">
+                        <button title="Get Cv" class="btn btn-get-cv px-5 py-2 mr-4 " onclick="getcv()"><small>Get
+                                Cv</small></button>
+                    </div>
+                </div>
                 <div class="row mt-5">
                     <div class="col-md-6 mr-5 col-12 experience-item">
                         <h2 class="experience-title mb-3">Work Experience</h2>
@@ -206,16 +175,24 @@
                 <div class="mt-5 row d-flex justify-content-center" id="gallery" data-toggle="modal"
                     data-target="#exampleModal">
                     <div class="col-12 col-sm-4 col-lg-4 certificate-item pb-3">
-                        <img class="img-fluid certificate-image" src="assets/images/sertif1.webp" alt="First slide"
-                            data-target="#carouselExample" data-slide-to="0">
+                        <div class="certificate bg-white p-2">
+                            <img class="img-fluid certificate-image" src="assets/images/sertif1.webp" alt="First slide"
+                                data-target="#carouselExample" data-slide-to="0">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-4 col-lg-4 pb-3 certificate-item">
-                        <img class="img-fluid certificate-image" src="assets/images/sertif2.webp" alt="Second slide"
-                            data-target="#carouselExample" data-slide-to="1">
+
+                        <div class="certificate bg-white p-2">
+                            <img class="img-fluid certificate-image" src="assets/images/sertif2.webp" alt="Second slide"
+                                data-target="#carouselExample" data-slide-to="1">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-4 col-lg-4 certificate-item">
-                        <img class="img-fluid certificate-image" src="assets/images/sertif3.webp" alt="third slide"
-                            data-target="#carouselExample" data-slide-to="2">
+                        <div class="certificate bg-white p-2">
+                            <img class="img-fluid certificate-image" src="assets/images/sertif3.webp" alt="third slide"
+                                data-target="#carouselExample" data-slide-to="2">
+                        </div>
+
                     </div>
                 </div>
 
@@ -291,8 +268,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Intermediate</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">HTML</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/html.webp" class="img-skill" alt="HTML">
                             </div>
                         </div>
                     </div>
@@ -301,8 +278,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Intermediate</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">Css</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/css.webp" class="img-skill" alt="CSS">
                             </div>
                         </div>
                     </div>
@@ -311,8 +288,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Intermediate</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">Bootstrap</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/bootstrap.webp" class="img-skill" alt="Bootstrap">
                             </div>
                         </div>
                     </div>
@@ -321,8 +298,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Beginner</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">Tailwind</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/tailwind.webp" class="img-skill" alt="Tailwind">
                             </div>
                         </div>
                     </div>
@@ -331,8 +308,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Beginner</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">JavaScript</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/js.webp" class="img-skill" alt="JS">
                             </div>
                         </div>
                     </div>
@@ -341,8 +318,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Intermediate</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">Laravel</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/laravel.webp" class="img-skill" alt="Laravel">
                             </div>
                         </div>
                     </div>
@@ -351,8 +328,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Beginner</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">React</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/react.webp" class="img-skill" alt="">
                             </div>
                         </div>
                     </div>
@@ -361,8 +338,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                             <div class="cards-level">
                                 <small class="d-block skill-level">Intermediate</small>
                             </div>
-                            <div class="card-skills-title text-center">
-                                <h4 class="skill-title">Figma</h4>
+                            <div class="card-skills-title text-center d-flex justify-content-center align-items-center">
+                                <img src="assets/images/figma.webp" class="img-skill" alt="">
                             </div>
                         </div>
                     </div>
@@ -392,7 +369,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                                 <span class="title-user">Fathur Rizky</span>
                             </div>
                             <div class="thumbnail portofolio-image">
-                                <img src="assets/images/Rectangle 19.png" alt="" class="img-fluid img">
+                                <img src="assets/images/Rectangle 19.webp" alt="" class="img-fluid img">
                             </div>
                             <div class="card-body">
                                 <h5 class="project-title">Web Developmpent</h5>
@@ -484,7 +461,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                                 <span class="title-user">Fathur Rizky</span>
                             </div>
                             <div class="thumbnail portofolio-image">
-                                <img src="assets/images/porto4.png" alt="" class="img-fl img">
+                                <img src="assets/images/porto4.webp" alt="" class="img-fl img">
                             </div>
                             <div class="card-body">
 
@@ -704,13 +681,15 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                 document.write(new Date().getFullYear())
             </script>
             <span class="design-by">&#8226; Design by</span>
-            <a href="https://www.instagram.com/rzky_fathur/" class="link-footer">Fathur Rizky</a>
+            <a href="https://www.instagram.com/rzky_fathur/" class="link-footer" aria-label="Visit My Instagram">Fathur
+                Rizky</a>
             <div class="d-flex flex-row mt-3 justify-content-center ">
-                <a href="https://www.instagram.com/rzky_fathur/tagged/?hl=id"><i
+                <a href="https://www.instagram.com/rzky_fathur/tagged/?hl=id" aria-label="Visit My Instagram"><i
                         class='bx bxl-instagram social_icon mr-3'></i></a>
-                <a href="https://www.linkedin.com/in/muhammad-fathur-rizky-a7544a1b2/"><i
-                        class='bx bxl-linkedin social_icon mr-3'></i></a>
-                <a href="https://dribbble.com/RZKYFATHUR"><i class='bx bxl-dribbble social_icon'></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-fathur-rizky-a7544a1b2/" aria-label="Visit My Linkedin"><i
+                        class='bx bxl-linkedin social_icon mr-3' aria-label="Visit My Linkedin"></i></a>
+                <a href="https://dribbble.com/RZKYFATHUR" aria-label="Visit My Dribbble"><i
+                        class='bx bxl-dribbble social_icon'></i></a>
             </div>
         </div>
     </footer>

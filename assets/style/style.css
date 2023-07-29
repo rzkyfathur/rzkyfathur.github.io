@@ -373,6 +373,10 @@ background-clip: text;
 .active-portfolio{
     font-weight: var(--font-bold);
     color: #7F00FF;
+    border: 1px solid #7F00FF;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: #e7ceff;
 }
 
 
@@ -468,9 +472,10 @@ background-clip: text;
     position: absolute;
     top: calc(85% - 100px);
     right: 0;
+    width: 15%;
 }
 .section-experience .experience-content .about{
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -494,7 +499,7 @@ background-clip: text;
     font-size: 1.2rem;
 }
 .experience-card{
-    border-bottom: .8px solid var(--first-color);
+    border-bottom: .8px solid #727272;
     padding-bottom: 10px;
 }
 
@@ -513,6 +518,20 @@ background-clip: text;
     padding: 4rem 1rem 2rem 1rem;
     border-radius: .85rem;
     
+}
+
+.section-skills .cards-skills .img-skill{
+    width: 40%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
+}
+.section-skills .cards-skills .img-skill-js{
+   border-radius: 12px;
+      width: 40%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
 }
 
 .section-skills .container .cards-skills:hover {
@@ -843,12 +862,20 @@ background-clip: text;
 
 .certificate-image {
     cursor: pointer;
+    border-radius: .65rem;
 }
 
-.certificate-image:hover {
-    transform: scale(1.1);
-}
 
+
+
+.section-certificate .certificate{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: .85rem;
+}
+.section-certificate .certificate:hover{
+     transform: scale(1.1);
+}
 
 
 /* ==================================Contact form====================================== */
@@ -974,6 +1001,16 @@ background-clip: text;
     .section-experience{
      margin-left: 12px;
      margin-right: 12px;
+}
+
+.section-experience .experience-content{
+   
+    padding: 24px 16px;
+    border-radius: .85rem;
+}
+
+.section-experience .experience-content .about{
+    width: 100%;
 }
 
       .section-experience .img-uiux{

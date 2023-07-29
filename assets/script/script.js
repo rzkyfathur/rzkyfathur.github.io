@@ -231,7 +231,7 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.contact-item, .portfolio-item, .skills-item, .certificate-item, .experience-item`, {
+sr.reveal(`.contact-item, .portfolio-item, .skills-item, .certificate-item, .section-experience`, {
     interval: 100
 })
 
